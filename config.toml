@@ -1,6 +1,8 @@
-baseURL      = "https://www.example.com/"
-title        = "Gallery Deluxe"
+baseURL      = "https://img.ppdms.gr/"
+title        = "My Gallery"
 disableKinds = ["section", "taxonomy", "term"]
+
+timeout = "15m"
 
 [params]
     # Set to enable Plausible Analytics.
@@ -9,20 +11,14 @@ disableKinds = ["section", "taxonomy", "term"]
     [params.gallerydeluxe]
 
         # Shuffle the images in the gallery to give the impression of a new gallery each page load.
-        shuffle = false
+        shuffle = true
 
         # Reverse the order of the images in the gallery.
         reverse = true
 
         # Enable Exif data in the gallery.
         # See https://gohugo.io/content-management/image-processing/#exif-data for how to filter tags.
-        enable_exif = true
-
-        # Optional watermark file for the large images.
-        [params.gallerydeluxe.watermark]
-            image = "images/gopher-hero8.png" # relative to /assets
-            posx  = "left"                    # one of "left", "center", "right"
-            posy  = "bottom"                  # one of "top", "center", "bottom"
+        enable_exif = false
 
 [build]
     [[build.cacheBusters]]
