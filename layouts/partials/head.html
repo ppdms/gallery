@@ -1,4 +1,3 @@
-
 {{ $css := resources.Get "css/styles.css" }}
 {{ if hugo.IsProduction}}
     {{ $css = $css | minify | fingerprint }}

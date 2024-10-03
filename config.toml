@@ -18,7 +18,7 @@ timeout = "15m"
 
         # Enable Exif data in the gallery.
         # See https://gohugo.io/content-management/image-processing/#exif-data for how to filter tags.
-        enable_exif = false
+        enable_exif = true
 
 [build]
     [[build.cacheBusters]]
@@ -39,7 +39,7 @@ timeout = "15m"
     anchor         = "smart"
     [imaging.exif]
         disableDate    = false
-        disableLatLong = true
+        disableLatLong = false
         includeFields  = 'Artist|LensModel|FNumber|ExposureTime'
 
 [server]
@@ -62,4 +62,4 @@ timeout = "15m"
         source = "static"
         target = "static"
     [[module.imports]]
-        path = "github.com/bep/gallerydeluxe"
+        path = "github.com/ppdms/gallerydeluxe"

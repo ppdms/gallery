@@ -3,5 +3,6 @@ resources/
 assets/jsconfig.json
 .hugo_build.lock
 node_modules/
-.DS_Store
+*.DS_Store
 content/images/*.jp*g
+*.sum
