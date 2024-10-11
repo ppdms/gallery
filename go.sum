@@ -16,5 +16,11 @@ github.com/bep/gallerydeluxe v0.11.0 h1:A5me+REJREWnHTC73yKeuXcC7g3V3s0DjgY7EDMw
 github.com/bep/gallerydeluxe v0.11.0/go.mod h1:sUfRcjREo6DwxPo0sMp0TAxNZiGreOY6DY2dWGpSeR8=
 github.com/bep/gallerydeluxe v0.11.1 h1:Bls2hBDY7WJ01TKtbmQT0Cl/Nwy8S/r5yj5qBaP7elo=
 github.com/bep/gallerydeluxe v0.11.1/go.mod h1:sUfRcjREo6DwxPo0sMp0TAxNZiGreOY6DY2dWGpSeR8=
+github.com/ppdms/gallerydeluxe v0.0.0-20241003173513-256586f5ed41 h1:q6ZIS0rvXFvOTMmb/XQaqxhbXT3dT5ByREFKzIyn5ok=
+github.com/ppdms/gallerydeluxe v0.0.0-20241003173513-256586f5ed41/go.mod h1:Tll0Ydh9Dl8t02ascuxBKcZLJF12F3/BTCWTsanZyhQ=
+github.com/ppdms/gallerydeluxe v0.0.0-20241011131809-3ce4bc9fe21f h1:GYTRuxEBdqJQCDpEC86F4KCCBz4JvdlRjr4kVcS6Ql8=
+github.com/ppdms/gallerydeluxe v0.0.0-20241011131809-3ce4bc9fe21f/go.mod h1:Tll0Ydh9Dl8t02ascuxBKcZLJF12F3/BTCWTsanZyhQ=
+github.com/ppdms/gallerydeluxe v0.0.0-20241011134038-96fe9b926b56 h1:fTNJ8s8HuefkqWjh+H1nILnkW93xk5GvpVhgFqVyakA=
+github.com/ppdms/gallerydeluxe v0.0.0-20241011134038-96fe9b926b56/go.mod h1:Tll0Ydh9Dl8t02ascuxBKcZLJF12F3/BTCWTsanZyhQ=
 github.com/ppdms/gallerydeluxe v0.11.1 h1:uG9f2amdUW75AsKKl7tST/UkPjezOVPWOOKgHOSKuso=
 github.com/ppdms/gallerydeluxe v0.11.1/go.mod h1:Tll0Ydh9Dl8t02ascuxBKcZLJF12F3/BTCWTsanZyhQ=
