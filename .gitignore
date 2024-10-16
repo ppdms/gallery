@@ -7,3 +7,5 @@ node_modules/
 content/images/
 **.sum
 .wrangler/
+originals/
+**/.DS_Store
