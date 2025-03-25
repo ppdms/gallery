@@ -1,37 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, 
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, 
           initial-scale=1.0" />
-    <title>{{ .Title }}</title>
-    <link rel="icon" href="favicon.ico" />
-    {{ partial "gallerydeluxe/head.html" . }}
-    {{ partial "head.html" . }}
-  </head>
+  <title>{{ .Title }}</title>
+  <link rel="icon" href="favicon.ico" />
+  {{ partial "gallerydeluxe/head.html" . }}
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDF2N62GZE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  <a class="logo" href="{{ site.Home.RelPermalink }}">
-    {{ partial "logo.html" . }}
-  </a>
+    gtag('config', 'G-EDF2N62GZE');
+  </script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  {{ partial "head.html" . }}
+</head>
 
-  {{/* init.hmlt takes either a slice of .images or a .sourcePath that points to a bundle with images.
-    An .id will be calculated if not provided. This will be used to create the URL to the data file.
-  */}}
-  {{ $bundle := site.GetPage "images" }}
-  {{ $images := $bundle.Resources.ByType "image" }}
-  {{ $gallery := partial "gallerydeluxe/init.html" (dict "sourcePath" "images") }}
-  {{ $params := site.Params.gallerydeluxe }}
-  {{/* We currently only support 1 gallery per page, which is create4 by an element with id 'gallerydeluxe',
-    and a valid data url.
-  */}}
-  <body id="gallerydeluxe" data-gd-image-data-url="{{ $gallery.imageDataUrl }}">
-    <div id="gd-modal" class="gd-modal">
-      <span id="gd-modal-close" class="gd-modal-close">&times;</span>
-      {{ if $params.enable_exif }}
-        <div id="gd-modal-exif" class="gd-modal-exif"></div>
-      {{ end }}
-    </div>
-  </body>
+<a class="logo" href="{{ site.Home.RelPermalink }}">
+  {{ partial "logo.html" . }}
+</a>
+
+{{/* init.hmlt takes either a slice of .images or a .sourcePath that points to a bundle with images.
+An .id will be calculated if not provided. This will be used to create the URL to the data file.
+*/}}
+{{ $bundle := site.GetPage "images" }}
+{{ $images := $bundle.Resources.ByType "image" }}
+{{ $gallery := partial "gallerydeluxe/init.html" (dict "sourcePath" "images") }}
+{{ $params := site.Params.gallerydeluxe }}
+{{/* We currently only support 1 gallery per page, which is create4 by an element with id 'gallerydeluxe',
+and a valid data url.
+*/}}
+
+<body id="gallerydeluxe" data-gd-image-data-url="{{ $gallery.imageDataUrl }}">
+  <div id="gd-modal" class="gd-modal">
+    <span id="gd-modal-close" class="gd-modal-close">&times;</span>
+    {{ if $params.enable_exif }}
+    <div id="gd-modal-exif" class="gd-modal-exif"></div>
+    {{ end }}
+  </div>
+</body>
+
 </html>
