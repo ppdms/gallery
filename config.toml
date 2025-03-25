@@ -48,9 +48,6 @@ timeout = "15m"
         [server.headers.values]
             Referrer-Policy = 'strict-origin-when-cross-origin'
 
-[services]
-  [services.googleAnalytics]
-    id = 'G-EDF2N62GZE'
 
 [module]
     [[module.mounts]]
