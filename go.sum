@@ -22,5 +22,9 @@ github.com/ppdms/gallerydeluxe v0.0.0-20241011131809-3ce4bc9fe21f h1:GYTRuxEBdqJ
 github.com/ppdms/gallerydeluxe v0.0.0-20241011131809-3ce4bc9fe21f/go.mod h1:Tll0Ydh9Dl8t02ascuxBKcZLJF12F3/BTCWTsanZyhQ=
 github.com/ppdms/gallerydeluxe v0.0.0-20241011134038-96fe9b926b56 h1:fTNJ8s8HuefkqWjh+H1nILnkW93xk5GvpVhgFqVyakA=
 github.com/ppdms/gallerydeluxe v0.0.0-20241011134038-96fe9b926b56/go.mod h1:Tll0Ydh9Dl8t02ascuxBKcZLJF12F3/BTCWTsanZyhQ=
+github.com/ppdms/gallerydeluxe v0.0.0-20241016153122-a1c6fc2710e8 h1:OdO0A5ziNGug8se8ippsu3wzHiHm8kngEEdbXg8LC7o=
+github.com/ppdms/gallerydeluxe v0.0.0-20241016153122-a1c6fc2710e8/go.mod h1:Tll0Ydh9Dl8t02ascuxBKcZLJF12F3/BTCWTsanZyhQ=
+github.com/ppdms/gallerydeluxe v0.0.0-20241016181146-442ca5835ff7 h1:G1tmf2JvYnPxRHdx8Hs4tp7r/ZqRL63bi62rPk9JbrU=
+github.com/ppdms/gallerydeluxe v0.0.0-20241016181146-442ca5835ff7/go.mod h1:Tll0Ydh9Dl8t02ascuxBKcZLJF12F3/BTCWTsanZyhQ=
 github.com/ppdms/gallerydeluxe v0.11.1 h1:uG9f2amdUW75AsKKl7tST/UkPjezOVPWOOKgHOSKuso=
 github.com/ppdms/gallerydeluxe v0.11.1/go.mod h1:Tll0Ydh9Dl8t02ascuxBKcZLJF12F3/BTCWTsanZyhQ=
